@@ -3,7 +3,7 @@
 
 """
 :Name:
-    xml_to_datafile.py
+    ml_segmenter.py
 
 :Authors:
     Soufian Salim (soufi@nsal.im)
@@ -12,7 +12,7 @@
     15 december 2013 (creation)
 
 :Description:
-    Converts KNBC XML to text datafiles fit for learning with Wapiti.
+    Japanese text segmentation with Wapiti
 """
 
 from xml.dom.minidom import parse
