@@ -79,8 +79,8 @@ def convertTestFile(xml_test_file, wapiti_test_file):
     with codecs.open(wapiti_test_file, 'w', 'utf-8') as test_file:
         for sentence in parse(xml_test_file).getElementsByTagName('sentence'):
             raw = sentence.getElementsByTagName('raw')[0].firstChild.wholeText
-            for car in raw:
-                test_file.write(car + '\n')
+            for char in raw:
+                test_file.write(char + '\n')
             test_file.write('\n')
 
 
