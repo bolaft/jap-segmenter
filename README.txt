@@ -4,13 +4,13 @@ in ./Wapiti
 	make install
 
 # Baseline
-python hmm_segmenter.py knbc-train.xml knbc-test.xml knbc-hmm.xml
+python hmm_segmenter.py data/knbc-train.xml data/knbc-test.xml knbc-hmm.xml
 
 # ML segmenter
-python ml_segmenter.py knbc-train.xml knbc-test.xml knbc-ml.xml
+python ml_segmenter.py data/knbc-train.xml data/knbc-test.xml knbc-ml.xml
 
 # Evaluation
-python evaluation.py knbc-ml.xml knbc-reference.xml
+python evaluation.py knbc-ml.xml data/knbc-reference.xml
 
 # Baseline (hmm_segmenter) scores :
 Avg Precision 0.904005681695
