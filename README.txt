@@ -2,10 +2,12 @@
 in ./Wapiti
 	make
 	make install
+
+_Totot_
 	
 1. _Tist_
-2. _Tast_
-3. _Tst_
+2. \_Tast\_
+3.  _Tst_
 
 # Baseline
 python hmm_segmenter.py data/knbc-train.xml data/knbc-test.xml knbc-hmm.xml
